@@ -35,8 +35,8 @@
         "path": "lang/es.json"
       }
     ],
-    "manifest":"https://raw.githubusercontent.com/death-save/maestro/master/module.json",
-    "download": "https://github.com/death-save/maestro/archive/master.zip",
-    "url": "https://github.com/death-save/maestro"
+    "manifest":"https://raw.githubusercontent.com/BlitzKraig/maestro/master/module.json",
+    "download": "https://github.com/BlitzKraig/maestro/archive/master.zip",
+    "url": "https://github.com/BlitzKraig/maestro"
   }
   
