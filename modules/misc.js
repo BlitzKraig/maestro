@@ -179,10 +179,18 @@ function _addPlaylistLoopToggle(html) {
 /**
  * PreUpdate Playlist Sound handler
  * @param {*} playlist 
+ * @param {*} sound
  * @param {*} update 
  * @todo maybe return early if no flag set?
  */
-export function _onPreUpdatePlaylistSound(playlist, update) {
+export function _onPreUpdatePlaylistSound(playlist, sound, update) {
+    
+    if(!sound._maestroSkip){
+        sound._maestroSkip = true;
+    } else {
+        return true;
+    }
+
     // Return if there's no id or the playlist is not in sequential or shuffl mode
     if (!playlist.data.playing || !update._id || ![0, 1].includes(playlist.data.mode)) {
         return true;
